@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^/SAE301/www/static/([a-zA-Z0-9.]+)$ /SAE301/www/static/$1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ /SAE301/index.php [QSA]
